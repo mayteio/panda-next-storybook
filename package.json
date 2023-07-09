@@ -7,9 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@ark-ui/react": "^0.7.2",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -21,6 +24,16 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.5.1"
+    "@pandacss/dev": "^0.6.0",
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-interactions": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/nextjs": "^7.0.26",
+    "@storybook/react": "^7.0.26",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-plugin-storybook": "^0.6.12",
+    "postcss-loader": "^7.3.3",
+    "storybook": "^7.0.26"
   }
 }
