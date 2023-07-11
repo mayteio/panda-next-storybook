@@ -13,6 +13,9 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
+    tokens: {
+      colors: { heavy: { value: "blue" } },
+    },
     extend: {
       recipes,
       textStyles,
@@ -22,7 +25,6 @@ export default defineConfig({
   },
   jsxFramework: "react",
   outExtension: "js",
-  clean: true,
   // The output directory for your css system
   outdir: "styled-system",
 });
